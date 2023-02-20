@@ -10,6 +10,6 @@ function sortArrayByStringLength(array $strings)
     return $strings;
 }
 
-$input = array('one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine');
+$input = array('a', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog');
 
 print_r(sortArrayByStringLength($input));
