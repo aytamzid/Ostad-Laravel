@@ -53,16 +53,6 @@ function registration() {
             die( 'Failed to upload profile picture.' );
         }
 
-        // $sql = "INSERT INTO users (first_name, last_name, email, password, profile_pic, registration_datetime )
-        // VALUES ('$firstName', '$lastName', '$email', '$password', '$pictureName', '$currentDateTime')";
-        // if ( mysqli_query( $conn, $sql ) ) {
-        //     echo "Registration successful!";
-        // } else {
-        //     echo "Error: " . $sql . "<br>" . mysqli_error( $conn );
-        // }
-
-        // mysqli_close( $conn ); // Close the database connection
-
         $usersFile = fopen( 'users.csv', 'a' );
         fputcsv( $usersFile, array( $firstName, $lastName, $email, $password, $pictureName, $currentDateTime ) );
         fclose( $usersFile );
