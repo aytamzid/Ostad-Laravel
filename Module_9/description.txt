@@ -1,0 +1,20 @@
+In this project I've tried to create a blogging website which will show blog post. Here I have created 4 different pages- Homepage, Blog Page, Single Post Page, Contact Page.
+All of the pages are responsive for different devices. Some details about the pages are given below-
+
+Homepage:
+The homepage has a header with a logo and navigation menu. In the navigation manu there are links for Home, Blog page, Contact page. The homepage also has some featured posts showing its title, featured image, breif description. There is a "Read More" button which will open the single post page showing the full post.
+
+Blog page:
+The blog page has the same header and shows most recent posts. We can see the title, featured image, some description and read more button for each post and while clicking the read more option it will open a single post page.
+
+Single post page:
+The single post page displays full blog post including its title, featured image, full content of the post.
+
+Contact page:
+The contact page has a the same header as well along with a contact form. The form has some input field for name, email, subject, message. Once an user enters the data and hits submit, it will show a success message. 
+
+
+
+Challenges and Solutions:
+One of the challenges faced during the implementation of the website was making it responsive. The solution was to use CSS media queries and Bootstrap framework to adjust the website's layout based on the screen size of the device.
+Another challenge was designing the contact page's form and implementing its functionality. The solution was to use PHP to process the form's data and check if it is submitted successfully or not. This was achieved by creating a PHP script that retrieves the form's data, validates it, and shows that the message is sent or not.
