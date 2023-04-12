@@ -5,31 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tamzid's Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://scontent.fdac24-2.fna.fbcdn.net/v/t1.15752-9/338921632_6266527586771228_3676886086478788222_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Rqtm4Wft4RUAX-cCz9K&_nc_ht=scontent.fdac24-2.fna&oh=03_AdTR29UAtglaJNb0idJpzv9n5SRRZsRWB-QnkCRRu_IeOw&oe=645BD092"
+        type="image/x-icon">
     <style>
-        @keyframes animation {
-            0% {
-                transform: scale(0) rotate(0);
-            }
-
-            100% {
-                transform: scale(1) rotate(360deg);
-            }
+        .navbar-brand img {
+            height: 50px;
         }
 
-        .container {
-            background-color: #dbd2d2;
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-            margin: 150px auto;
-            animation: animation 2s ease-in-out;
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #368add;
+            background-color: #ec8888;
+            border-radius: 20px;
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+
+        .navbar-brand {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .collapse.show .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
         }
     </style>
 </head>
 
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img
+                    src="https://scontent.fdac24-2.fna.fbcdn.net/v/t1.15752-9/338921632_6266527586771228_3676886086478788222_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Rqtm4Wft4RUAX-cCz9K&_nc_ht=scontent.fdac24-2.fna&oh=03_AdTR29UAtglaJNb0idJpzv9n5SRRZsRWB-QnkCRRu_IeOw&oe=645BD092"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 
