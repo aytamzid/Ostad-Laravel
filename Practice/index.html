@@ -5,60 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade Calculator</title>
-    <link rel="shortcut icon"
-        href="https://scontent.fdac24-2.fna.fbcdn.net/v/t1.15752-9/338921632_6266527586771228_3676886086478788222_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Rqtm4Wft4RUAX-cCz9K&_nc_ht=scontent.fdac24-2.fna&oh=03_AdTR29UAtglaJNb0idJpzv9n5SRRZsRWB-QnkCRRu_IeOw&oe=645BD092"
-        type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Live Test</title>
     <style>
-        input {
-            width: 100px;
-            padding: 5px;
-            margin: 10px;
-            border - radius: 5px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            background-color: #4CAF50;
             border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
             border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="card">
-            <h1>Multiplication Table Generator</h1>
-  <form>
-    <label for="number">Enter a number:</label>
-    <input type="number" id="number" name="number" />
-    <button type="button" onclick="generateTable()">Generate Table</button>
-  </form>
-  <div id="table"></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- BOOTSTRAP JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-    <!-- FUNCTION JS -->
+    <h1>Add List Item Example</h1>
+    <button onclick="addListItem()">Add Apples</button>
+    <ul id="myList">
+        <li>Oranges</li>
+        <li>Bananas</li>
+        <li>Grapes</li>
+    </ul>
 
     <script>
-        function generateTable() {
-      const num = document.getElementById("number").value;
-      const table = document.getElementById("table");
-      table.innerHTML = "";
-      for (let i = 1; i <= 10; i++) {
-        const product = num * i;
-        const equation = `${num} x ${i} = ${product}`;
-        const row = document.createElement("p");
-        row.innerText = equation;
-        table.appendChild(row);
-      }
-    }
-
+        function addListItem() {
+            const myList = document.getElementById("myList");
+            const newListItem = document.createElement("li");
+            const textNode = document.createTextNode("Apples");
+            newListItem.appendChild(textNode);
+            myList.appendChild(newListItem);
+        }
     </script>
 </body>
 
