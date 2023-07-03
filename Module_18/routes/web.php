@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AssignmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,8 +12,15 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+ */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(AssignmentController::class)->group(function () {
+    Route::get('/', 'postData');
+    Route::get('/postData', 'postData');
+    Route::get('/categoryPost/{id}', 'categoryPost');
+    Route::get('/posts/{id}/delete', 'softDelete');
+    Route::get('/softData', 'softData');
+    Route::get('/categories/{id}/posts', 'specificCatPost');
+    Route::get('/categories/{id}/latestpost', 'latestPost');
+    Route::get('/categories', 'CategoriesLatestPosts');
 });
