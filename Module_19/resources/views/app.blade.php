@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tamzid's Blog</title>
     @vite('resources/css/app.css')
+    <script src="{{asset('js/axios.min.js')}}"></script>
 </head>
 
 <body class="box-border">

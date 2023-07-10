@@ -8,11 +8,11 @@
         <div class=" ring-2 ring-gray-600 min-h-[300px] mx-5 rounded-lg shadow-md shadow-cyan-400 p-5">
             {{-- Each Comment --}}
             <div class="shadow-lg  px-5 py-2 mb-3 lg:max-w-[60%]">
-                <span
+                <span id="cmntname"
                     class="text-xl font-semibold  mb-9 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Tamzid Sam
                 </span>
-                <p class="mt-2">This is the Message that Tamzid typed.This is the Message that Tamzid typed.This is the
+                <p id="cmntmsg" class="mt-2">This is the Message that Tamzid typed.This is the Message that Tamzid typed.This is the
                     Message that Tamzid typed.</p>
             </div>
         </div>
@@ -22,7 +22,7 @@
         {{-- form starts here --}}
         <div class="m-5 mx-auto">
             <p class="m-5 mb-0 text-2xl">Comment Here</p>
-            <form class="bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4">
+            <form id="contactForm" class="bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4">
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
                         Name:
@@ -52,3 +52,44 @@
 
     </div>
 </section>
+
+<script>
+
+// Comment Section
+// getcomment();
+// async function getcomment(){
+//     try {
+//     let URL="/allcomments/1";
+//     let response = await axios.get(URL);
+//     document.getElementById("cmntname").innerHTML = response.data['name'];
+//     document.getElementById("cmntmsg").innerHTML = response.data['message'];
+//     }
+// }
+
+    // Form Posting Script
+    // let commentForm = document.getElementById('commentForm');
+    // commentForm.addEventListener('submit', async (event) => {
+    //             event.preventDefault();
+    //             let name = document.getElementById('name').value;
+    //             let comment = document.getElementById('comment').value;
+
+    //             if (name.length === 0 || comment.length === 0) {
+    //                 alert('Please fill all the fields');
+
+    //             } else {
+    //                 let formdata = {
+    //                     name: name,
+    //                     message: comment
+    //                 }
+    //                 let URL = '/addcomment/{id}';
+    //                 let result = await axios.post(URL, formdata);
+
+    //                 if (result.status === 200) {
+    //                     alert('Your comment has been added');
+
+    //                 } else {
+    //                     alert('Something went wrong');
+    //                 }
+    //             }
+    //         })
+</script>
