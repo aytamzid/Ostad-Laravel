@@ -1,7 +1,7 @@
 <section>
     <div class="h-16 shadow-md w-full px-5">
         <div class=" max-w-[1200px] mx-auto h-full flex flex-row justify-between items-center">
-            <a href="{{ url('/',) }}" class="group"><h1 class="text-3xl font-bold text-gray-800 group-hover:text-teal-700">
+            <a href="{{ url('/',) }}" class="group"><h1 class="text-3xl font-bold text-gray-800 group-hover:text-teal-700 xl:ml-5">
                 Tamzid's Blog
             </h1></a>
             <div class="flex justify-around">

@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="box-border">
 
     @include('components.navbar')
     <div class="content-div">
