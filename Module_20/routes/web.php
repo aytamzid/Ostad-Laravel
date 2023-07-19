@@ -1,18 +1,12 @@
 <?php
 
+use App\Http\Controllers\LoginPageController;
+use App\Http\Controllers\PassresetPageController;
+use App\Http\Controllers\SignupPageController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+// Route for displaying
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route:: get('/',[LoginPageController::class, 'page']);
+Route:: get('/forgotpassword',[PassresetPageController::class, 'page']);
+Route:: get('/signup',[SignupPageController::class, 'page']);
